@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cnsdqkobitf1b"]
 
 [ext_resource type="Script" uid="uid://c55ccx5kibirx" path="res://addons/variantedit/test_scene.gd" id="1_oo4ad"]
-[ext_resource type="Script" uid="uid://cbogqydfs8vse" path="res://addons/variantedit/nodes/variant_edit.gd" id="2_oo4ad"]
+[ext_resource type="PackedScene" uid="uid://natbe3l83xwx" path="res://addons/variantedit/nodes/variant_edit.tscn" id="2_oo4ad"]
 
 [node name="TestScene" type="Control" node_paths=PackedStringArray("vbox", "button")]
 layout_mode = 3
@@ -38,7 +38,5 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VariantEdit" type="HBoxContainer" parent="VBoxContainer"]
+[node name="VariantEdit" parent="VBoxContainer" instance=ExtResource("2_oo4ad")]
 layout_mode = 2
-script = ExtResource("2_oo4ad")
-metadata/_custom_type_script = "uid://cbogqydfs8vse"
